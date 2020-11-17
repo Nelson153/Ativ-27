@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/js.png">
+    <title>4</title>
+    <style>
+        body{
+            max-width: 500px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+
+        #dig1, #dig2{
+            width: 100%;
+            height: 50px;
+            font-size: 25px;
+            padding-left: 5px;
+            margin: 10px 0;
+        }
+
+        #soma, #sub, #mult, #div{
+            width: 20%;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        #res{
+            padding-top: 10px;
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <input type="number" id="dig1" placeholder="Digite o Primeiro Número">
+    <input type="number" id="dig2" placeholder="Digite o Segundo Número">
+
+    <input type="button" id="soma" value="Somar" onclick="somar()">
+    <input type="button" id="sub" value="Subtrair" onclick="subtrair()">
+    <input type="button" id="mult" value="Multiplicar" onclick="multiplicar()">
+    <input type="button" id="div" value="Dividir" onclick="dividir()">
+
+
+    <div id="res"></div>
+
+    <script>
+        function somar(){
+            let numero1 = window.document.getElementById("dig1");
+            let numero2 = window.document.getElementById("dig2");
+
+            let num1 = Number(dig1.value);
+            let num2 = Number(dig2.value);
+
+            let soma = num1 + num2;
+
+            res.innerHTML = soma;
+        }
+
+        function subtrair(){
+            let numero1 = window.document.getElementById("dig1");
+            let numero2 = window.document.getElementById("dig2");
+
+            let num1 = Number(dig1.value);
+            let num2 = Number(dig2.value);
+
+            let sub = num1 - num2;
+
+            res.innerHTML = sub;
+        }
+
+        function multiplicar(){
+            let numero1 = window.document.getElementById("dig1");
+            let numero2 = window.document.getElementById("dig2");
+
+            let num1 = Number(dig1.value);
+            let num2 = Number(dig2.value);
+
+            let mult = num1 * num2;
+
+            res.innerHTML = mult;
+        }
+
+        function dividir(){
+            let numero1 = window.document.getElementById("dig1");
+            let numero2 = window.document.getElementById("dig2");
+
+            let num1 = Number(dig1.value);
+            let num2 = Number(dig2.value);
+
+            let div = num1 / num2;
+
+            res.innerHTML = div;
+        }
+    </script>
+
+</body>
+</html>

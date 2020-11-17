@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/js.png">
+    <title>2</title>
+    <style>
+
+        body{
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .jojo{
+            padding-left: 5px;
+            width: 100%;
+            height: 50px;
+            font-size: 25px;
+            margin-top: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="text" id="digitar" placeholder="Digite algo">
+
+    <script>
+        const palavra = document.getElementById("digitar");
+
+        digitar.addEventListener("keyup", maiusculo);
+
+        palavra.classList.add("jojo");
+
+        function maiusculo(){
+            palavra.value = palavra.value.toLowerCase();
+        }
+    </script>
+
+</body>
+</html>
